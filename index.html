@@ -69,8 +69,8 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2>Responsive Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+<h2>Boomer job application simulator</h2>
+<p>Please fill in the internal application form below. We will email you back no later than Marchtember Oneteenth</p>
 
 <div class="container">
   <form action="/action_page.php">
@@ -92,27 +92,30 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="col-25">
-     <label for="job">Which job?</label>
-    <select id="job" name="job">
-      <option value="Amazon">Amazon</option>
-      <option value="Chimney Sweep">Chimney Sweep</option>
-      <option value="Deliveroo">Deliveroo</option>
-      <option value="Zero hours something">Zero hours something</option>
+      <label for="Job">Select a job</label>
+    </div>
+    <div class="col-75">
+      <select id="Job" name="Job">
+        <option value="Amazon worker">Amazon worker</option>
+        <option value="Chimney sweep">Chimney sweep</option>
+        <option value="Deliveroo driver">Deliveroo driver</option>
+        <option value="Uber driver">Uber driver</option>
       </select>
     </div>
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="subject">Please write out your CV</label>
+      <label for="subject">Please type out your CV. (No uploads allowed)</label>
     </div>
     <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="CV here please, no uploads..." style="height:200px"></textarea>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     </div>
   </div>
   <div class="row">
-    <input type="#" value="Submit">
+    <input type="submit" value="Submit">
   </div>
   </form>
 </div>
 
-
+</body>
+</html>
